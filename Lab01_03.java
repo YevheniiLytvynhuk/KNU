@@ -16,8 +16,9 @@ public class Lab01_03 {
             String number = in.nextLine(); //Зчитування введення до змінної
 
             String aNumber[] = number.split(" "); //Створення масиву зі змінної number. Пробіл використовується як індикатор кінця попереднього елементу та початку нового.
-            int u = Integer.parseInt(aNumber[0]); //Створення змінної в який передається елемент масиву по індексу
-            int r = Integer.parseInt(aNumber[1]); //Створення змінної в який передається елемент масиву по індексу
+            double u = Double.parseDouble(aNumber[0]); //Створення змінної в який передається елемент масиву по індексу
+            double r = Double.parseDouble(aNumber[1]); //Створення змінної в який передається елемент масиву по індексу
+           
             double log= (((Math.log10(u)+Math.log10(r))/2));//Середнє арифметичне логарифмів
             double Result=Math.pow(10,log);//Антилогарифм
             System.out.println("В десятковому представленні:"+ "\n" + Result);//Результати на консолі
@@ -26,6 +27,7 @@ public class Lab01_03 {
             System.out.println(frm.format("%3.2e",Result));//Результати на консолі
             
 		       }catch(Exception ex) {System.out.println("Сталася помилка. Спробуйте ще");//Цей блок спрацює при помилці та виведе повідомлення
+		         
 		       }
 			try {
 		    Scanner i = new Scanner(System.in);//Користувач вибирає продовжити виконання чи зупинити роботу програми
