@@ -1,3 +1,4 @@
+-finput-charset=utf-8 -fexec-charset=cp866
 package firstlab;
 
 import java.util.Formatter;
